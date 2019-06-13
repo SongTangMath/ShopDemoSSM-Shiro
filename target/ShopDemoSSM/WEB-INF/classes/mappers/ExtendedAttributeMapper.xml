@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkdx.database.ExtendedAttributeDAO">
+<resultMap id="ExtendedAttribute" type="com.zkdx.database.ExtendedAttribute">
+    <result property="attributeID" column="attribute_id"></result>
+    <result property="productID" column="product_id"></result>
+    <result property="attributeName" column="attribute_name"></result>
+    <result property="attributeValue" column="attribute_value"></result>
+</resultMap>
+    <select id="listAttributesByProductName" resultMap="ExtendedAttribute">
+     select *from extended_attribute where product_name=#{name}
+   </select>
+    <select id="listAttributesByProductID" resultMap="ExtendedAttribute">
+       select *from extended_attribute where product_id=#{id}
+    </select>
+
+
+    <insert id="insertNewExtendedAttribute">
+       insert into extended_attribute (product_id,attribute_name, attribute_value) values(#{param1},#{param2},#{param3})
+    </insert>
+
+
+    <delete id="deleteExtendedAttributeByID">
+       delete from extended_attribute where attribute_id=#{id}
+    </delete>
+</mapper>

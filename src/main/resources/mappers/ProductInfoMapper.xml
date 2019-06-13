@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkdx.database.ProductInfoDAO">
+
+    <select id="getProductInfoById" resultType="com.zkdx.database.ProductInfo">
+SELECT* from product_info where product_info.id=#{id}
+   </select>
+    <select id="getProductInfoByProductName" resultType="com.zkdx.database.ProductInfo">
+SELECT* from product_info where product_info.id=#{name}
+    </select>
+    <update id="modifyProductByProductID">
+        update product_info set product_name=#{param2},product_status=#{param3},price=#{param4},inventory_quantity=#{param5},
+            picture_link=#{param6},product_plan=#{param7},buying_price=#{param8},product_category=#{param9} where id=#{param1})
+    </update>
+    <update id="modifyProductPictureLinkByProductID">
+        update product_info set picture_link=#{param2} where id=#{param1}
+    </update>
+    <update id="modifyProductPlanByProductName">
+        update product_info set product_plan=#{param2} where product_name=#{param1}
+    </update>
+
+    <update id="setProductIntentoryQuantityByProductId">
+        update product_info set inventory_quantity=#{param2} where id=#{param1}
+    </update>
+    <update id="modifyProductStatusByProductId">
+        update product_info set inventory_quantity=#{param2} where id=#{param1}
+    </update>
+    <delete id="clearProducts">
+        delete from product_info
+    </delete>
+
+
+    <insert id="insertNewProduct">
+            insert into product_info (product_name,product_status,price,inventory_quantity,"
+            + "picture_link,product_plan,buying_price,product_category)values
+            (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8})
+    </insert>
+    <delete id="deleteProductByProductID">
+        delete from product_info where id=#{id}
+    </delete>
+
+
+    <select id="listAllProducts" resultType="com.zkdx.database.ProductInfo">
+        select* from product_info
+    </select>
+    <select id="listProductsByProductCategory" resultType="com.zkdx.database.ProductInfo">
+        select* from product_info where product_category like %${param1}% or product_name like ${param2}
+    </select>
+    <select id="listStatus0Products" resultType="com.zkdx.database.ProductInfo">
+       select* from product_info where product_status=0
+    </select>
+    <select id="listStatus0ProductsByProductCategory" resultType="com.zkdx.database.ProductInfo">
+        update product_info set product_plan=#{param2} where id=#{param1}
+    </select>
+</mapper>

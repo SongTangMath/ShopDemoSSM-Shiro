@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<context:property-placeholder
+		location="classpath:db.properties" />
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="initialSize" value="${jdbc.initialSize}"></property>
+		<property name="maxTotal" value="${jdbc.maxTotal}"></property>
+		<property name="maxWaitMillis" value="${jdbc.maxWaitMillis}"></property>
+		<property name="driverClassName"
+			value="${jdbc.driverClassName}"></property>
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<bean id="jdbcTemplate"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="productInfoDAO" class="com.zkdx.database.ProductInfoDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="productService" class="com.zkdx.database.ProductServiceImpl">
+		<property name="productInfoDAO" ref="productInfoDAO"></property>
+	</bean>
+
+	<bean id="userDAO" class="com.zkdx.database.UserDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="userService" class="com.zkdx.database.UserServiceImpl">
+		<property name="userDAO" ref="userDAO"></property>
+	</bean>
+
+	<bean id="employeeDAO" class="com.zkdx.database.EmployeeDAOImpl">
+	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="employeeService" class="com.zkdx.database.EmployeeServiceImpl">
+		<property name="employeeDAO" ref="employeeDAO"></property>
+	</bean>
+	
+	<bean id="orderInfoDAO" class="com.zkdx.database.OrderInfoDAOImpl">
+	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="orderInfoService" class="com.zkdx.database.OrderInfoServiceImpl">
+		<property name="orderInfoDAO" ref="orderInfoDAO"></property>
+	</bean>
+	
+	<bean id="extendedAttributeDAO" class="com.zkdx.database.ExtendedAttributeDAOImpl">
+	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="extendedAttributeService" class="com.zkdx.database.ExtendedAttributeServiceImpl">
+		<property name="extendedAttributeDAO" ref="extendedAttributeDAO"></property>
+	</bean>
+	
+		<bean id="categoryDAO" class="com.zkdx.database.CategoryDAOImpl">
+	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="categoryService" class="com.zkdx.database.CategoryServiceImpl">
+		<property name="categoryDAO" ref="categoryDAO"></property>
+	</bean>
+	
+	<bean id="springUtil" class="com.zkdx.util.SpringUtil" lazy-init="false">	
+	</bean>
+</beans>

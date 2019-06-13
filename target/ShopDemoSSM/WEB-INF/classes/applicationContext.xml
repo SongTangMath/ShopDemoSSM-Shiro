@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<context:property-placeholder
+		location="classpath:db.properties" />
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="initialSize" value="${jdbc.initialSize}"></property>
+		<property name="maxTotal" value="${jdbc.maxTotal}"></property>
+		<property name="maxWaitMillis" value="${jdbc.maxWaitMillis}"></property>
+		<property name="driverClassName"
+			value="${jdbc.driverClassName}"></property>
+	</bean>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<!-- 自动扫描mappers.xml文件 -->
+		<property name="mapperLocations" value="classpath:mappers/*.xml"></property>
+		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+	</bean>
+	<mybatis-spring:scan base-package="com.zkdx.database"></mybatis-spring:scan>
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<bean id="jdbcTemplate"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+	<bean id="productService" class="com.zkdx.database.ProductServiceImpl"></bean>
+	<bean id="userService" class="com.zkdx.database.UserServiceImpl"></bean>
+	<bean id="employeeService" class="com.zkdx.database.EmployeeServiceImpl"></bean>
+	<bean id="orderInfoService" class="com.zkdx.database.OrderInfoServiceImpl"></bean>
+	<bean id="extendedAttributeService" class="com.zkdx.database.ExtendedAttributeServiceImpl"></bean>
+	<bean id="categoryService" class="com.zkdx.database.CategoryServiceImpl"></bean>
+
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager"></property>
+		<property name="loginUrl" value="/login"></property>
+		<property name="unauthorizedUrl" value="/WEB-INF/jsp/login_failed.jsp"></property>
+		<property name="successUrl" value="/login"></property>
+		<property name="filters">
+			<map>
+				<entry key="authcCustomized" value-ref="customizedFormAuthenticationFilter"/>
+			</map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				/register.jsp=anon
+				/index.jsp=anon
+				/employee_login.jsp=anon
+				/manager_login.jsp=anon
+				/static/**=anon
+				/Quit=logout
+				/login=authcCustomized
+			</value>
+		</property>
+	</bean>
+	<bean id="customizedFormAuthenticationFilter" class="com.zkdx.util.CustomizedFormAuthenticationFilter">
+		<property name="usernameParam" value="username" />
+		<!-- 表单中密码的input名称 -->
+		<property name="passwordParam" value="password" />
+	</bean>
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="LoginRealm"></property>
+	</bean>
+	<bean id="LoginRealm" class="com.zkdx.util.LoginRealm"></bean>
+	<bean id="authc" class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter">
+
+	</bean>
+	<bean id="logout" class="org.apache.shiro.web.filter.authc.LogoutFilter">
+		<property name="redirectUrl" value="/index.jsp"></property>
+	</bean>
+
+
+	<!--
+	<bean id="productService" class="com.zkdx.database.ProductServiceImpl">
+		<property name="productInfoDAO" ref="productInfoDAO"></property>
+	</bean>
+	<bean id="userService" class="com.zkdx.database.UserServiceImpl">
+		<property name="userDAO" ref="userDAO"></property>
+	</bean>
+	<bean id="employeeService" class="com.zkdx.database.EmployeeServiceImpl">
+		<property name="employeeDAO" ref="employeeDAO"></property>
+	</bean>
+		<bean id="orderInfoService" class="com.zkdx.database.OrderInfoServiceImpl">
+		<property name="orderInfoDAO" ref="orderInfoDAO"></property>
+	</bean>
+	<bean id="extendedAttributeService" class="com.zkdx.database.ExtendedAttributeServiceImpl">
+		<property name="extendedAttributeDAO" ref="extendedAttributeDAO"></property>
+	</bean>
+	<bean id="categoryService" class="com.zkdx.database.CategoryServiceImpl">
+		<property name="categoryDAO" ref="categoryDAO"></property>
+	</bean>
+
+
+
+	<bean id="productInfoDAO" class="com.zkdx.database.ProductInfoDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="userDAO" class="com.zkdx.database.UserDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="employeeDAO" class="com.zkdx.database.EmployeeDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="orderInfoDAO" class="com.zkdx.database.OrderInfoDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="extendedAttributeDAO" class="com.zkdx.database.ExtendedAttributeDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="categoryDAO" class="com.zkdx.database.CategoryDAOImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	<bean id="springUtil" class="com.zkdx.util.SpringUtil" lazy-init="false">	
+	</bean>
+	-->
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkdx.database.OrderInfoDAO">
+    <resultMap id="OrderInfo" type="com.zkdx.database.OrderInfo">
+        <result property="orderID" column="order_id"></result>
+        <result property="username" column="username"></result>
+        <result property="orderDatetime" column="order_datetime"></result>
+        <result property="productName" column="product_name"></result>
+        <result property="productQuantity" column="product_quantity"></result>
+        <result property="price" column="price"></result>
+        <result property="extendedAttributeString" column="extended_attribute_string"></result>
+        <result property="buyingPrice" column="buying_price"></result>
+    </resultMap>
+    <select id="listOrdersByUsername" resultMap="OrderInfo">
+     select* from order_info where username=#{username}
+   </select>
+    <select id="listOrdersByTime" resultMap="OrderInfo">
+     select *from order_info where order_datetime between #{param1} and #{param2}
+    </select>
+    <select id="listOrdersByIndice" resultMap="OrderInfo">
+     select *from order_info limit #{param1} , #{param2}
+    </select>
+
+
+    <insert id="insertNewOrderInfo">
+     insert into order_info(username, order_datetime, product_name, product_quantity,
+            price,extended_attribute_string,buying_price,product_category)values
+            (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8})
+    </insert>
+
+
+    <select id="getTotalOrderQuantity" resultType="java.lang.Integer">
+       select count(*) from order_info
+    </select>
+</mapper>

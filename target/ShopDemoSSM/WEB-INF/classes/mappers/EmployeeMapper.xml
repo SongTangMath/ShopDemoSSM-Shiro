@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkdx.database.EmployeeDAO">
+
+    <select id="getEmployeeById" resultType="com.zkdx.database.Employee">
+      select * from employee where id = #{id}
+   </select>
+    <select id="getEmployeeByIdentityCard" resultType="com.zkdx.database.Employee">
+        select* from employee where identity_card=#{identityCard}
+    </select>
+    <select id="listAllEmployees" resultType="com.zkdx.database.Employee">
+        select* from employee
+    </select>
+    <delete id="clearEmployees" >
+       delete from employee
+    </delete>
+
+    <insert id="insertNewEmployee">
+        insert into  employee (identity_card,name,password,department_name,job,salary)
+        values(#{identityCard},#{name},#{password},#{departmentName},#{job},#{salary})
+    </insert>
+
+    <update id="modifyEmployeeById">
+        update  employee set identity_card=#{identityCard},name=#{name},
+        password=#{password},department_name=#{departmentName},job=#{job},salary=#{salary} where id=#{id}
+    </update>
+    <delete id="deleteEmployeeById">
+        delete from employee where id=#{id}
+    </delete>
+</mapper>

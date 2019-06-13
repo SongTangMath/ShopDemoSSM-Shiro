@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkdx.database.CategoryDAO">
+    <resultMap id="Category" type="com.zkdx.database.Category">
+        <result property="categoryID" column="category_id"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="parentID" column="parent_id"/>
+        <result property="isEnd" column="is_end"/>
+        <result property="categoryStatus" column="category_status"/>
+        <result property="categoryLevel" column="category_level"/>
+
+    </resultMap>
+
+    <select id="getCategoryById" resultMap="Category">
+     SELECT* from category where category_id=#{id}
+   </select>
+    <select id="getCategoryByName" resultMap="Category">
+       SELECT* from category where category_name=#{name}
+    </select>
+
+    <delete id="deleteCategoryAndItsSubCategoriesByName" >
+      delete from category where category_name=#{name}
+    </delete>
+
+    <insert id="insertNewCategory">
+       insert into category(category_name,parent_id,is_end,category_status,category_level)
+       values(#{param1},#{param2},#{param3},#{param4},#{param5})
+    </insert>
+<update id="setIsEnd">
+    update category set is_end=#{param1} where category_name=#{param2}
+</update>
+    <update id="setStatus">
+        update category set category_status=#{param2} where category_name=#{param1}
+    </update>
+    <select id="listCategoriesByParentId" resultMap="Category">
+        select* from category where parent_id=#{parentId}
+    </select>
+    <select id="listLevel0Categories" resultMap="Category">
+        select* from category where parent_id=-1
+    </select>
+
+</mapper>
