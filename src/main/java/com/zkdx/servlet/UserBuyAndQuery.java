@@ -32,10 +32,11 @@ public class UserBuyAndQuery {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @RequestMapping(value = "/userBuy/{username}")
     @RequiresRoles("user")
     public String userBuy(@PathVariable("username") String username, HttpServletRequest request,
-        Map<String, Object> map) {
+                          Map<String, Object> map) {
         System.out.println(productService);
         System.out.println(orderInfoService);
         Enumeration<String> enumString = request.getParameterNames();
@@ -49,33 +50,33 @@ public class UserBuyAndQuery {
                 } catch (NumberFormatException e) {
 
                 }
-                    en = en.substring(12);
-                    int productID = Integer.parseInt(en);
-                    if (value <= 0) {
-                        continue;
-                    }
-                    ProductInfo info = productService.getProductInfoById(productID);
-                    if (info != null) {
-                        value = Math.min(value, info.getInventoryQuantity());
-                        productService.modifyProductIntentoryQuantityByProductId(productID, -value);
-                        List<ExtendedAttribute> list = extendedAttributeService.listAttributesByProductID(productID);
-                        String extendedAttributeString = "";
-                        for (ExtendedAttribute attr : list) {
-                            String parameterName = "ProductID" + info.getId() + " " + attr.getAttributeName();
-                            String attrValue = request.getParameter(parameterName);
-                            System.out.println(parameterName);
-                            System.out.println(attrValue);
-                            if (attrValue != null) {
+                en = en.substring(12);
+                int productID = Integer.parseInt(en);
+                if (value <= 0) {
+                    continue;
+                }
+                ProductInfo info = productService.getProductInfoById(productID);
+                if (info != null) {
+                    value = Math.min(value, info.getInventoryQuantity());
+                    productService.modifyProductIntentoryQuantityByProductId(productID, -value);
+                    List<ExtendedAttribute> list = extendedAttributeService.listAttributesByProductID(productID);
+                    String extendedAttributeString = "";
+                    for (ExtendedAttribute attr : list) {
+                        String parameterName = "ProductID" + info.getId() + " " + attr.getAttributeName();
+                        String attrValue = request.getParameter(parameterName);
+                        System.out.println(parameterName);
+                        System.out.println(attrValue);
+                        if (attrValue != null) {
 
-                                extendedAttributeString += (attr.getAttributeName() + " " + attrValue + " ");
-                            }
-                            System.out.println(extendedAttributeString);
-
+                            extendedAttributeString += (attr.getAttributeName() + " " + attrValue + " ");
                         }
-                        orderInfoService.insertNewOrderInfo(username,
+                        System.out.println(extendedAttributeString);
+
+                    }
+                    orderInfoService.insertNewOrderInfo(username,
                             new java.sql.Timestamp(System.currentTimeMillis()), info.getProductName(), value,
                             info.getPrice(), extendedAttributeString, info.getBuyingPrice(), info.getProductCategory());
-                    }
+                }
 
 
             }
@@ -88,7 +89,7 @@ public class UserBuyAndQuery {
     @RequestMapping(value = "/userQueryByKeyWords/{username}")
     @RequiresRoles("user")
     public String userQueryByKeyWords(@PathVariable("username") String username, Map<String, Object> map,
-        String productCategory) {
+                                      String productCategory) {
         map.put("products", productService.listStatus0ProductsByProductCategory(productCategory));
         return "products";
     }
@@ -96,7 +97,7 @@ public class UserBuyAndQuery {
     @RequestMapping(value = "/userQueryByCategory/{username}")
     @RequiresRoles("user")
     public String userQueryByCategory(@PathVariable("username") String username, Map<String, Object> map, String level0,
-        String level1, String level2) {
+                                      String level1, String level2) {
         if (level0 == null || level1 == null || level2 == null) {
             return "redirect:/index.jsp";
         }

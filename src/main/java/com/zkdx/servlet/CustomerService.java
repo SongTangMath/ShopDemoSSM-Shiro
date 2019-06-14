@@ -31,6 +31,7 @@ public class CustomerService {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @RequiresRoles("customerService")
     @RequestMapping("CustomerServiceQueryUser")
     public String customerServiceQueryUser(Map<String, Object> map, String username) {
@@ -54,10 +55,11 @@ public class CustomerService {
         map.put("totalPages", totalPages);
         return "customer_service";
     }
+
     @RequiresRoles("customerService")
     @RequestMapping("ListOrderByPage")
-    public String listOrderByPage(Integer orderListIndex,Map<String,Object>map) {
-        System.out.println("orderListIndex "+orderListIndex);
+    public String listOrderByPage(Integer orderListIndex, Map<String, Object> map) {
+        System.out.println("orderListIndex " + orderListIndex);
         int totalQuantity = orderInfoService.getTotalOrderQuantity();
         int totalPages = -1;
         if (totalQuantity % 10 == 0) {
@@ -66,11 +68,11 @@ public class CustomerService {
             totalPages = totalQuantity / 10 + 1;
         }
         map.put("totalPages", totalPages);
-        if(orderListIndex==null||orderListIndex<=0) {             
-        return "customer_service";}
-        else {
-            
-            map.put("userOrderInfoList", orderInfoService.listOrdersByIndice(orderListIndex+1, 10));
+        if (orderListIndex == null || orderListIndex <= 0) {
+            return "customer_service";
+        } else {
+
+            map.put("userOrderInfoList", orderInfoService.listOrdersByIndice(orderListIndex + 1, 10));
         }
         return "customer_service";
     }

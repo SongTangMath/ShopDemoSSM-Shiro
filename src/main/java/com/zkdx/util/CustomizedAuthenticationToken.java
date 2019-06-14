@@ -22,7 +22,7 @@ public class CustomizedAuthenticationToken extends UsernamePasswordToken {
 
     @Override
     public CustomizedPrincipal getPrincipal() {
-        CustomizedPrincipal principal=new CustomizedPrincipal();
+        CustomizedPrincipal principal = new CustomizedPrincipal();
         principal.setLoginCategory(loginCategory);
         principal.setUsername(getUsername());
         return principal;

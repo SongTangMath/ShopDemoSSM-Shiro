@@ -13,15 +13,7 @@ import com.zkdx.util.SpringUtil;
 
 @Controller
 public class JSONReply {
-/*
-    private EmployeeService employeeService = (EmployeeService)SpringUtil.getBean("employeeService");
-    private UserService userService = (UserService)SpringUtil.getBean("userService");
-    private ProductService productService = (ProductService)SpringUtil.getBean("productService");
-    CategoryService categoryService = (CategoryService)SpringUtil.getBean("categoryService");
-    ExtendedAttributeService extendedAttributeService =
-        (ExtendedAttributeService)SpringUtil.getBean("extendedAttributeService");
 
- */
 
     @Autowired
     private EmployeeService employeeService;
@@ -35,6 +27,7 @@ public class JSONReply {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @ResponseBody
     @RequestMapping("JSONExtendedAttributeMap")
     public HashMap<String, ArrayList<String>> JSONExtendedAttributeMap(Integer buyProductID) {

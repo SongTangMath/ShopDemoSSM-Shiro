@@ -55,22 +55,21 @@ public class EditEmployee {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @RequiresRoles("admin")
     @RequestMapping(value = "/emp", method = RequestMethod.POST)
     public String addNewEmployee(HttpServletRequest request, @RequestParam("identityCard") String identityCard,
-        @RequestParam("password") String password, Map<String, Object> map,
-        @RequestParam(value = "id", required = false) Integer id, @RequestParam("name") String name,
-        @RequestParam("departmentName") String departmentName, @RequestParam("job") String job,
-        @RequestParam("salary") Integer salary) {
+                                 @RequestParam("password") String password, Map<String, Object> map,
+                                 @RequestParam(value = "id", required = false) Integer id, @RequestParam("name") String name,
+                                 @RequestParam("departmentName") String departmentName, @RequestParam("job") String job,
+                                 @RequestParam("salary") Integer salary) {
 
         map.put("employee", new Employee());
         if (identityCard == null || password == null || name == null || departmentName == null || job == null
-            || salary == null) {
+                || salary == null) {
 
             return "manager";
-        }
-
-        else {
+        } else {
             if (id == null) {
                 System.out.println("insertNewEmployee");
                 employeeService.insertNewEmployee(identityCard, name, password, departmentName, job, salary);
@@ -78,13 +77,14 @@ public class EditEmployee {
                 System.out.println("modifyEmployeeById" + id);
                 System.out.println(salary);
                 System.out.println(
-                    employeeService.modifyEmployeeById(id, identityCard, name, password, departmentName, job, salary));
+                        employeeService.modifyEmployeeById(id, identityCard, name, password, departmentName, job, salary));
             }
             map.put("employees", employeeService.listAllEmployees());
             return "manager";
         }
 
     }
+
     @RequiresRoles("admin")
     @RequestMapping(value = "/emp/{id}", method = RequestMethod.DELETE)
     public String deleteEmployee(HttpServletRequest request, @PathVariable("id") Integer id, Map<String, Object> map) {
@@ -94,9 +94,7 @@ public class EditEmployee {
         if (id == null) {
             System.out.println("argumentsIncorrect");
             return "manager";
-        }
-
-        else {
+        } else {
             System.out.println("deleteEmployeeById" + id);
             employeeService.deleteEmployeeById(id);
             map.put("employees", employeeService.listAllEmployees());
@@ -104,13 +102,15 @@ public class EditEmployee {
         }
 
     }
+
     @RequiresRoles("admin")
     @RequestMapping(value = "/emp/{id}", method = RequestMethod.PUT)
     public String modifyEmployee(HttpServletRequest request, @PathVariable("id") Integer id, Map<String, Object> map) {
 
         if (id == null) {
             return "manager";
-        } ;
+        }
+        ;
 
         Employee employee = employeeService.getEmployeeById(id);
         map.put("employee", employee);
@@ -122,7 +122,7 @@ public class EditEmployee {
     @ResponseBody
     @RequiresRoles("admin")
     public String querySellingStatus(HttpServletRequest request, HttpServletResponse response, Map<String, Object> map,
-        String beginDateString, String endDateString) {
+                                     String beginDateString, String endDateString) {
         map.put("employee", new Employee());
         HttpSession session = request.getSession(true);
         System.out.println("beginDateString " + beginDateString);
@@ -144,7 +144,7 @@ public class EditEmployee {
         System.out.println(beginDate);
         System.out.println(endDate);
         List<OrderInfo> list = orderInfoService.listOrdersByTime(new java.sql.Timestamp(beginDate.getTime()),
-            new java.sql.Timestamp(endDate.getTime()));
+                new java.sql.Timestamp(endDate.getTime()));
         Map<String, SellingStatus> sellingStatusMap = new HashMap<String, SellingStatus>();
         for (OrderInfo info : list) {
             int totalCost = info.getBuyingPrice() * info.getProductQuantity();
@@ -152,7 +152,7 @@ public class EditEmployee {
             if (!sellingStatusMap.containsKey(info.getProductName())) {
 
                 sellingStatusMap.put(info.getProductName(),
-                    new SellingStatus(info.getProductName(), info.getProductQuantity(), totalCost, totalProfit));
+                        new SellingStatus(info.getProductName(), info.getProductQuantity(), totalCost, totalProfit));
 
             } else {
                 SellingStatus status = sellingStatusMap.get(info.getProductName());
@@ -208,7 +208,7 @@ public class EditEmployee {
         String fileName = "" + beginDateString + "到" + endDateString + "销售数据.xlsx";
         try {
             response.setHeader("Content-disposition",
-                "attachment;filename=" + new String(fileName.getBytes("gb2312"), "ISO8859-1"));
+                    "attachment;filename=" + new String(fileName.getBytes("gb2312"), "ISO8859-1"));
         } catch (UnsupportedEncodingException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();

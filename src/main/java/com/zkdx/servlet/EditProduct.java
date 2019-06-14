@@ -48,6 +48,7 @@ public class EditProduct {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @RequiresRoles("seller")
     @RequestMapping(value = "/SetOnShelf/{id}")
     public String setOnShelf(Map<String, Object> map, @PathVariable("id") Integer id) {
@@ -58,6 +59,7 @@ public class EditProduct {
         map.put("products", list);
         return "purchaser";
     }
+
     @RequiresRoles("seller")
     @RequestMapping(value = "/SetOffShelf/{id}")
     public String setOffShelf(Map<String, Object> map, @PathVariable("id") Integer id) {
@@ -68,6 +70,7 @@ public class EditProduct {
         map.put("products", list);
         return "purchaser";
     }
+
     @RequiresRoles("seller")
     @RequestMapping(value = "/EditPlanAndPic/{id}")
     public String editPlanAndPic(@PathVariable("id") Integer id, Model model) {
@@ -112,8 +115,8 @@ public class EditProduct {
     @RequestMapping(value = "/ModifyProduct/{id}")
     @RequiresRoles("seller")
     public String modifyPlanAndPic(HttpServletRequest request, Map<String, Object> map, @PathVariable("id") Integer id,
-        String pictureUrl, String productPlan,
-        @RequestParam(value = "newpicture", required = false) MultipartFile multipartFile) {
+                                   String pictureUrl, String productPlan,
+                                   @RequestParam(value = "newpicture", required = false) MultipartFile multipartFile) {
 
         productService.modifyProductPlanByProductID(id, productPlan);
         productService.modifyProductPictureLinkByProductID(id, pictureUrl);
@@ -123,7 +126,7 @@ public class EditProduct {
         if (multipartFile != null && multipartFile.getSize() > 0) {
             String filePathPart1 = request.getServletContext().getRealPath("/UploadedPictures");
             String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-                + request.getContextPath() + "/";
+                    + request.getContextPath() + "/";
             long time = System.currentTimeMillis();
             String filePathPart2 = time + multipartFile.getOriginalFilename();
             String newPictureLink = basePath + "UploadedPictures/" + filePathPart2;
@@ -154,7 +157,7 @@ public class EditProduct {
     @RequestMapping(value = "AddNewProduct")
     @RequiresRoles("seller")
     public String addNewProduct(Map<String, Object> map, String productName, Integer price, Integer buyingPrice,
-        String level2) {
+                                String level2) {
         System.out.println(productName + " " + price + " " + buyingPrice + " " + level2);
         if (level2 != null) {
             level2 = level2.trim();
@@ -183,9 +186,9 @@ public class EditProduct {
     @RequestMapping(value = "/AddProductsFromExcel")
     @RequiresRoles("seller")
     public String addProductsFromExcel(Map<String, Object> map, HttpServletRequest request,
-        @RequestParam(value = "excelFile", required = false) MultipartFile multipartFile) {
+                                       @RequestParam(value = "excelFile", required = false) MultipartFile multipartFile) {
         String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-            + request.getContextPath() + "/";
+                + request.getContextPath() + "/";
 
         File file = null;
 
@@ -333,7 +336,7 @@ public class EditProduct {
                 }
 
                 if (price == -1 || buyingPrice == -1 || productname == null || "".equals(productname)
-                    || productCategory == null || "".equals(productCategory)) {
+                        || productCategory == null || "".equals(productCategory)) {
                     continue;
                 }
                 productService.insertNewProduct(productname, 0, buyingPrice, 0, "", "", buyingPrice, productCategory);
@@ -361,9 +364,9 @@ public class EditProduct {
     @RequestMapping(value = "/DeleteCategoryConfirmed")
     @RequiresRoles("seller")
     public String deleteCategoryConfirmed(String categoryNameToDel) {
-        if (categoryNameToDel == null || "".equals(categoryNameToDel)){
-            return "purchaser";}
-        else {
+        if (categoryNameToDel == null || "".equals(categoryNameToDel)) {
+            return "purchaser";
+        } else {
             categoryService.deleteCategoryAndItsSubCategoriesByName(categoryNameToDel);
         }
         return "purchaser";
@@ -372,9 +375,9 @@ public class EditProduct {
     @RequestMapping(value = "/EditExtendedAttribute/{id}")
     @RequiresRoles("seller")
     public String editExtendedAttribute(@PathVariable("id") Integer id, Map<String, Object> map) {
-        if (id == null)
-        {return "purchaser";}
-        else {
+        if (id == null) {
+            return "purchaser";
+        } else {
             map.put("productInfo", productService.getProductInfoById(id));
             map.put("listAttributes", extendedAttributeService.listAttributesByProductID(id));
         }
@@ -390,9 +393,9 @@ public class EditProduct {
     @RequestMapping(value = "/DeleteExtendedAttribute/{id}")
     @RequiresRoles("seller")
     public String deleteExtendedAttribute(@PathVariable("id") Integer id, Map<String, Object> map) {
-        if (id == null)
-        {return "purchaser";}
-        else {
+        if (id == null) {
+            return "purchaser";
+        } else {
             extendedAttributeService.deleteExtendedAttributeByID(id);
             map.put("productInfo", productService.getProductInfoById(id));
             map.put("listAttributes", extendedAttributeService.listAttributesByProductID(id));
@@ -403,7 +406,7 @@ public class EditProduct {
     @RequestMapping(value = "/AddExtendedAttribute/{id}")
     @RequiresRoles("seller")
     public String addExtendedAttribute(@PathVariable("id") Integer id, String attributeName, String attributeValue,
-        Map<String, Object> map) {
+                                       Map<String, Object> map) {
         if (id == null || attributeName == null || attributeValue == null) {
             return "purchaser";
         } else {

@@ -34,34 +34,32 @@ public class LoginHandler {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @RequestMapping("/login")
     public String login(HttpServletRequest request,
-         Map<String, Object> map) {
+                        Map<String, Object> map) {
 
-        CustomizedPrincipal customizedPrincipal=(CustomizedPrincipal)SecurityUtils.getSubject().getPrincipal();
-        String username= customizedPrincipal.getUsername();
-        String loginCategory=customizedPrincipal.getLoginCategory();
-        if(request.getSession().getAttribute("shiroLoginFailure")!=null){
+        CustomizedPrincipal customizedPrincipal = (CustomizedPrincipal) SecurityUtils.getSubject().getPrincipal();
+        String username = customizedPrincipal.getUsername();
+        String loginCategory = customizedPrincipal.getLoginCategory();
+        if (request.getSession().getAttribute("shiroLoginFailure") != null) {
             return "login_failed";
         }
 
 
-        System.out.println("in LoginHandler: "+loginCategory+" "+username);
-        if("admin".equals(loginCategory)){
+        System.out.println("in LoginHandler: " + loginCategory + " " + username);
+        if ("admin".equals(loginCategory)) {
             map.put("adminName", "admin");
             map.put("employee", new Employee());
             map.put("employees", employeeService.listAllEmployees());
             return "manager";
-    }
-
-         else if("user".equals(loginCategory)) {
+        } else if ("user".equals(loginCategory)) {
             User user = userService.getUserByUsername(username);
-                map.put("user", user);
-                map.put("products", productService.listStatus0Products());
-                map.put("orderInfoMap", orderInfoService.mapOrdersByUsername(username));
-                return "products";
-        }
-         else if("employee".equals(loginCategory)){
+            map.put("user", user);
+            map.put("products", productService.listStatus0Products());
+            map.put("orderInfoMap", orderInfoService.mapOrdersByUsername(username));
+            return "products";
+        } else if ("employee".equals(loginCategory)) {
             Employee employee = employeeService.getEmployeeByIdentityCard(username);
             if (employee != null) {
                 System.out.println(employee);

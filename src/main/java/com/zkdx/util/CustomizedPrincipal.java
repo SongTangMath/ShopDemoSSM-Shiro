@@ -1,7 +1,7 @@
 package com.zkdx.util;
 
 
-public class CustomizedPrincipal  {
+public class CustomizedPrincipal {
     private String loginCategory;
     private String username;
 

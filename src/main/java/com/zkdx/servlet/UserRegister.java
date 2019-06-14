@@ -16,10 +16,7 @@ import com.zkdx.util.SpringUtil;
 
 @Controller
 public class UserRegister {
-    /*
-    private UserService userService = (UserService)SpringUtil.getBean("userService");
 
-     */
 
     @Autowired
     private EmployeeService employeeService;
@@ -33,6 +30,7 @@ public class UserRegister {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
+
     @ResponseBody
     @RequestMapping(value = "/testUsername/{username}")
     public boolean usernameUsedAlready(@PathVariable("username") String username) {
