@@ -3,6 +3,7 @@ package com.zkdx.servlet;
 import java.util.*;
 
 import com.zkdx.database.*;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,7 +31,7 @@ public class CustomerService {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
-
+    @RequiresRoles("customerService")
     @RequestMapping("CustomerServiceQueryUser")
     public String customerServiceQueryUser(Map<String, Object> map, String username) {
         System.out.println(username);
@@ -53,6 +54,7 @@ public class CustomerService {
         map.put("totalPages", totalPages);
         return "customer_service";
     }
+    @RequiresRoles("customerService")
     @RequestMapping("ListOrderByPage")
     public String listOrderByPage(Integer orderListIndex,Map<String,Object>map) {
         System.out.println("orderListIndex "+orderListIndex);

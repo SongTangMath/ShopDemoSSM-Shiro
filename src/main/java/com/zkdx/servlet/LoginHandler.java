@@ -37,8 +37,15 @@ public class LoginHandler {
     @RequestMapping("/login")
     public String login(HttpServletRequest request,
          Map<String, Object> map) {
-        String username= (String)SecurityUtils.getSubject().getPrincipal();
-        String loginCategory=(String)request.getSession().getAttribute("loginCategory");
+
+        CustomizedPrincipal customizedPrincipal=(CustomizedPrincipal)SecurityUtils.getSubject().getPrincipal();
+        String username= customizedPrincipal.getUsername();
+        String loginCategory=customizedPrincipal.getLoginCategory();
+        if(request.getSession().getAttribute("shiroLoginFailure")!=null){
+            return "login_failed";
+        }
+
+
         System.out.println("in LoginHandler: "+loginCategory+" "+username);
         if("admin".equals(loginCategory)){
             map.put("adminName", "admin");

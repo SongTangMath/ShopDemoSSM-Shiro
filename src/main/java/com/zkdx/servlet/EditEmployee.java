@@ -18,6 +18,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -54,7 +55,7 @@ public class EditEmployee {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
-
+    @RequiresRoles("admin")
     @RequestMapping(value = "/emp", method = RequestMethod.POST)
     public String addNewEmployee(HttpServletRequest request, @RequestParam("identityCard") String identityCard,
         @RequestParam("password") String password, Map<String, Object> map,
@@ -84,7 +85,7 @@ public class EditEmployee {
         }
 
     }
-
+    @RequiresRoles("admin")
     @RequestMapping(value = "/emp/{id}", method = RequestMethod.DELETE)
     public String deleteEmployee(HttpServletRequest request, @PathVariable("id") Integer id, Map<String, Object> map) {
 
@@ -103,7 +104,7 @@ public class EditEmployee {
         }
 
     }
-
+    @RequiresRoles("admin")
     @RequestMapping(value = "/emp/{id}", method = RequestMethod.PUT)
     public String modifyEmployee(HttpServletRequest request, @PathVariable("id") Integer id, Map<String, Object> map) {
 
@@ -119,6 +120,7 @@ public class EditEmployee {
 
     @RequestMapping("QuerySellingStatus")
     @ResponseBody
+    @RequiresRoles("admin")
     public String querySellingStatus(HttpServletRequest request, HttpServletResponse response, Map<String, Object> map,
         String beginDateString, String endDateString) {
         map.put("employee", new Employee());

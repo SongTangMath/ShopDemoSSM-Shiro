@@ -18,4 +18,15 @@ public class CustomizedAuthenticationToken extends UsernamePasswordToken {
         super(username, password);
 
     }
+
+
+    @Override
+    public CustomizedPrincipal getPrincipal() {
+        CustomizedPrincipal principal=new CustomizedPrincipal();
+        principal.setLoginCategory(loginCategory);
+        principal.setUsername(getUsername());
+        return principal;
+    }
+
+
 }

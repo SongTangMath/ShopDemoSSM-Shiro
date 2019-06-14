@@ -20,6 +20,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,15 +35,6 @@ import com.zkdx.util.SpringUtil;
 @Controller
 @SessionAttributes(value = {"products"})
 public class EditProduct {
-    /*
-    private EmployeeService employeeService = (EmployeeService)SpringUtil.getBean("employeeService");
-    private UserService userService = (UserService)SpringUtil.getBean("userService");
-    private ProductService productService = (ProductService)SpringUtil.getBean("productService");
-    private CategoryService categoryService = (CategoryService)SpringUtil.getBean("categoryService");
-    ExtendedAttributeService extendedAttributeService =
-        (ExtendedAttributeService)SpringUtil.getBean("extendedAttributeService");
-
-     */
 
     @Autowired
     private EmployeeService employeeService;
@@ -56,7 +48,7 @@ public class EditProduct {
     CategoryService categoryService;
     @Autowired
     ExtendedAttributeService extendedAttributeService;
-
+    @RequiresRoles("seller")
     @RequestMapping(value = "/SetOnShelf/{id}")
     public String setOnShelf(Map<String, Object> map, @PathVariable("id") Integer id) {
         if (id != null) {
@@ -66,7 +58,7 @@ public class EditProduct {
         map.put("products", list);
         return "purchaser";
     }
-
+    @RequiresRoles("seller")
     @RequestMapping(value = "/SetOffShelf/{id}")
     public String setOffShelf(Map<String, Object> map, @PathVariable("id") Integer id) {
         if (id != null) {
@@ -76,7 +68,7 @@ public class EditProduct {
         map.put("products", list);
         return "purchaser";
     }
-
+    @RequiresRoles("seller")
     @RequestMapping(value = "/EditPlanAndPic/{id}")
     public String editPlanAndPic(@PathVariable("id") Integer id, Model model) {
         model.addAttribute("product", productService.getProductInfoById(id));
@@ -84,6 +76,7 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/AddInventory")
+    @RequiresRoles("seller")
     public String addInventory(HttpServletRequest request, Map<String, Object> map) {
         Enumeration<String> enumString = request.getParameterNames();
         while (enumString.hasMoreElements()) {
@@ -117,6 +110,7 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/ModifyProduct/{id}")
+    @RequiresRoles("seller")
     public String modifyPlanAndPic(HttpServletRequest request, Map<String, Object> map, @PathVariable("id") Integer id,
         String pictureUrl, String productPlan,
         @RequestParam(value = "newpicture", required = false) MultipartFile multipartFile) {
@@ -158,6 +152,7 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "AddNewProduct")
+    @RequiresRoles("seller")
     public String addNewProduct(Map<String, Object> map, String productName, Integer price, Integer buyingPrice,
         String level2) {
         System.out.println(productName + " " + price + " " + buyingPrice + " " + level2);
@@ -174,6 +169,7 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "AddNewCategory")
+    @RequiresRoles("seller")
     public String addNewCategory(Map<String, Object> map, String isTop, String parentName, String name) {
         if (isTop != null && name != null && parentName != null) {
             System.out.println("new Category");
@@ -185,6 +181,7 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/AddProductsFromExcel")
+    @RequiresRoles("seller")
     public String addProductsFromExcel(Map<String, Object> map, HttpServletRequest request,
         @RequestParam(value = "excelFile", required = false) MultipartFile multipartFile) {
         String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
@@ -350,19 +347,22 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/DeleteCategory")
+    @RequiresRoles("seller")
     public String deleteCategory() {
         return "delete_category";
     }
 
     @RequestMapping(value = "/GiveUpDeleteCategory")
+    @RequiresRoles("seller")
     public String giveUpDeleteCategory() {
         return "purchaser";
     }
 
     @RequestMapping(value = "/DeleteCategoryConfirmed")
+    @RequiresRoles("seller")
     public String deleteCategoryConfirmed(String categoryNameToDel) {
-        if (categoryNameToDel == null || "".equals(categoryNameToDel))
-            return "purchaser";
+        if (categoryNameToDel == null || "".equals(categoryNameToDel)){
+            return "purchaser";}
         else {
             categoryService.deleteCategoryAndItsSubCategoriesByName(categoryNameToDel);
         }
@@ -370,9 +370,10 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/EditExtendedAttribute/{id}")
+    @RequiresRoles("seller")
     public String editExtendedAttribute(@PathVariable("id") Integer id, Map<String, Object> map) {
         if (id == null)
-            return "purchaser";
+        {return "purchaser";}
         else {
             map.put("productInfo", productService.getProductInfoById(id));
             map.put("listAttributes", extendedAttributeService.listAttributesByProductID(id));
@@ -381,14 +382,16 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/GiveUp")
+    @RequiresRoles("seller")
     public String giveUp() {
         return "purchaser";
     }
 
     @RequestMapping(value = "/DeleteExtendedAttribute/{id}")
+    @RequiresRoles("seller")
     public String deleteExtendedAttribute(@PathVariable("id") Integer id, Map<String, Object> map) {
         if (id == null)
-            return "purchaser";
+        {return "purchaser";}
         else {
             extendedAttributeService.deleteExtendedAttributeByID(id);
             map.put("productInfo", productService.getProductInfoById(id));
@@ -398,11 +401,12 @@ public class EditProduct {
     }
 
     @RequestMapping(value = "/AddExtendedAttribute/{id}")
+    @RequiresRoles("seller")
     public String addExtendedAttribute(@PathVariable("id") Integer id, String attributeName, String attributeValue,
         Map<String, Object> map) {
-        if (id == null || attributeName == null || attributeValue == null)
+        if (id == null || attributeName == null || attributeValue == null) {
             return "purchaser";
-        else {
+        } else {
             extendedAttributeService.insertNewExtendedAttribute(id, attributeName, attributeValue);
             map.put("productInfo", productService.getProductInfoById(id));
             map.put("listAttributes", extendedAttributeService.listAttributesByProductID(id));

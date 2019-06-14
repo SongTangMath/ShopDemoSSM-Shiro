@@ -5,6 +5,7 @@ import java.util.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,15 +19,6 @@ import com.zkdx.util.SpringUtil;
 @Controller
 @SessionAttributes(value = {"order_info", "products", "orderInfoMap"})
 public class UserBuyAndQuery {
-/*
-    private EmployeeService employeeService = (EmployeeService)SpringUtil.getBean("employeeService");
-    private UserService userService = (UserService)SpringUtil.getBean("userService");
-    private ProductService productService = (ProductService)SpringUtil.getBean("productService");
-    private OrderInfoService orderInfoService = (OrderInfoService)SpringUtil.getBean("orderInfoService");
-    ExtendedAttributeService extendedAttributeService =
-        (ExtendedAttributeService)SpringUtil.getBean("extendedAttributeService");
-
- */
 
     @Autowired
     private EmployeeService employeeService;
@@ -41,6 +33,7 @@ public class UserBuyAndQuery {
     @Autowired
     ExtendedAttributeService extendedAttributeService;
     @RequestMapping(value = "/userBuy/{username}")
+    @RequiresRoles("user")
     public String userBuy(@PathVariable("username") String username, HttpServletRequest request,
         Map<String, Object> map) {
         System.out.println(productService);
@@ -93,6 +86,7 @@ public class UserBuyAndQuery {
     }
 
     @RequestMapping(value = "/userQueryByKeyWords/{username}")
+    @RequiresRoles("user")
     public String userQueryByKeyWords(@PathVariable("username") String username, Map<String, Object> map,
         String productCategory) {
         map.put("products", productService.listStatus0ProductsByProductCategory(productCategory));
@@ -100,6 +94,7 @@ public class UserBuyAndQuery {
     }
 
     @RequestMapping(value = "/userQueryByCategory/{username}")
+    @RequiresRoles("user")
     public String userQueryByCategory(@PathVariable("username") String username, Map<String, Object> map, String level0,
         String level1, String level2) {
         if (level0 == null || level1 == null || level2 == null) {
