@@ -61,3 +61,5 @@ attribute_name varchar(60),
 attribute_value varchar(60),
 unique(product_id,attribute_name))charset utf8mb4;
 
+insert into user(username,password,phone,address) values('张三'.123,17718920358,'Palmont City')
+

@@ -175,8 +175,10 @@ public class EditProduct {
     @RequiresRoles("seller")
     public String addNewCategory(Map<String, Object> map, String isTop, String parentName, String name) {
         if (isTop != null && name != null && parentName != null) {
-            System.out.println("new Category");
-            categoryService.insertNewCategory(name, parentName, 0, isTop == "true" ? 0 : 1);
+            System.out.println("isTop: "+isTop);
+            int categoryLevel= "1".equals(isTop)  ? 0 : 1;
+            System.out.println("new Category "+ name+" "+parentName +" 0 "+" "+ categoryLevel);
+            categoryService.insertNewCategory(name, parentName, 0, categoryLevel);
         }
         List<ProductInfo> list = productService.listAllProducts();
         map.put("products", list);

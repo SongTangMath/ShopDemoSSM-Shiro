@@ -31,6 +31,14 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 		<property name="securityManager" ref="securityManager"></property>
 	</bean>
 
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="error"></property>
+		<property name="exceptionMappings">
+			<props>
+				<prop key="org.apache.shiro.authz.UnauthorizedException">error</prop>
+			</props>
+		</property>
+	</bean>
 
 	<mvc:default-servlet-handler />
 	<mvc:annotation-driven>

@@ -14,7 +14,7 @@ public interface CategoryDAO {
 
     public int deleteCategoryByName(String name);
 
-    public int insertNewCategory(String name, String parentName, int categoryStatus, int categoryLevel);
+    public int insertNewCategory(String name, int parentId,int isEnd, int categoryStatus, int categoryLevel);
 /**
  * 设定某个类别是否为叶子(这个类别没有子类别)
  * @param name 需要设定状态的类别名称

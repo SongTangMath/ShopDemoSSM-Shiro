@@ -74,29 +74,12 @@ public class CategoryDAOImpl implements CategoryDAO {
     }
 
     @Override
-    public int insertNewCategory(String name, String parentName, int categoryStatus, int categoryLevel) {
-        int parentID = -1;
-        int parentLevel = -1;
-        Category test = getCategoryByName(name);
-        Category parent = null;
-        if (test != null) {
-            return 0;
-        }
-        if (categoryLevel != 0) {
-            parent = getCategoryByName(parentName);
-            if (parent == null) {
-                return 0;
-            }
+    public int insertNewCategory(String name, int parentID,int isEnd, int categoryStatus, int categoryLevel) {
 
-            else {
-                parentID = parent.getCategoryID();
-                parentLevel = parent.getCategoryLevel();
-                setIsEnd(parent.getCategoryName(), 0);
-            }
-        }
+
         String sql =
             "insert into category(category_name,parent_id,is_end,category_status,category_level) values(?,?,?,?,?)";
-        return jdbcTemplate.update(sql, new Object[] {name, parentID, 1, categoryStatus, parentLevel + 1});
+        return jdbcTemplate.update(sql, new Object[] {name, parentID, 1, categoryStatus, categoryLevel});
     }
 
     @Override

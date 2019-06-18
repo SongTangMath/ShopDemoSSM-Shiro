@@ -95,7 +95,7 @@ public class LoginRealm extends AuthorizingRealm {
             info.addRole("user");
         }
 
-
+        //return null;
         return info;
     }
 }

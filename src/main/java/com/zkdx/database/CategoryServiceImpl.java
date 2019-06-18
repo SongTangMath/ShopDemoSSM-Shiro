@@ -60,12 +60,30 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public int insertNewCategory(String name, String parentName, int categoryStatus, int categoryLevel) {
         if (!validateArg(name) || parentName == null) {
+            System.out.println("invalid args");
             return 0;
         } else if (categoryDAO.getCategoryByName(name) == null) {
-            return categoryDAO.insertNewCategory(name, parentName, categoryStatus, categoryLevel);
-        } else {
+            Category father = null;
+            if (categoryLevel != 0) {
+                father = categoryDAO.getCategoryByName(parentName);
+                if (father != null) {
+                    categoryDAO.setIsEnd(father.getCategoryName(), 0);
+                    return categoryDAO.insertNewCategory(name, father.getCategoryID(), 1, categoryStatus, father.getCategoryLevel()+1);
+                }
+                else{
+                    System.out.println("parent_category doesn't exist");
+                    return 0;
+                }
+
+            } else {
+                return categoryDAO.insertNewCategory(name, -1,1, categoryStatus, categoryLevel);
+            }
+        }
+        else{
+            System.out.println("category already exists");
             return 0;
         }
+
     }
 
     @Override

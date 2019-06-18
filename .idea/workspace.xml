@@ -10,17 +10,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08504b0f-3b61-465a-affd-da2eb6bb8d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopDemoSpring.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ShopDemoSpring.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/JSONReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/JSONReply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserBuyAndQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserBuyAndQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/SellingStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/SellingStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/listener/SpringServletContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/listener/SpringServletContextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/JSONReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/JSONReply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/Quit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/Quit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserBuyAndQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserBuyAndQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedAuthenticationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/LoginRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/LoginRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/SpringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/SpringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/SellingStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/SellingStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/listener/SpringServletContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/listener/SpringServletContextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/JSONReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/JSONReply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/Quit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/Quit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserBuyAndQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserBuyAndQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedAuthenticationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/LoginRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/LoginRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/SpringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/SpringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestMain.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,99 +147,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/SpringUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="406" column="28" selection-start-line="406" selection-start-column="28" selection-end-line="406" selection-end-column="28" />
-              <folding>
-                <element signature="e#14918#14919#0" expanded="true" />
-                <element signature="e#14952#14953#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/JSONReply.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/Quit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserBuyAndQuery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="235">
+              <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="221">
+              <caret line="178" column="51" lean-forward="true" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/purchaser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#226#227#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="114" column="16" lean-forward="true" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -153,6 +179,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -162,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/Mapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
@@ -181,15 +207,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/EmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ExtendedAttributeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/OrderInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/SpringUtil.java" />
         <option value="$PROJECT_DIR$/src/test/resources/shiro.ini" />
-        <option value="$PROJECT_DIR$/src/test/java/TestMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/EmployeeRealm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/Quit.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_failed.jsp" />
@@ -200,18 +222,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/employee_login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer_service.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/JSONReply.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserBuyAndQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" />
       </list>
     </option>
   </component>
@@ -250,6 +278,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,7 +319,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zkdx" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
@@ -299,7 +328,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zkdx" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +336,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopDemoSSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
@@ -332,18 +369,30 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopDemoSSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopDemoSSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/eclipse-workspace/ShopDemo" />
+    <property name="last_opened_file_path" value="D:/eclipse-workspace/ShopDemoSpring/src/main/webapp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -387,7 +436,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 7.0.90" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.90" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ShopDemoSSM/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ShopDemoSSM:war exploded">
@@ -466,8 +514,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestMain.test" />
         <item itemvalue="Application.TestMain" />
+        <item itemvalue="JUnit.TestMain.test" />
       </list>
     </recent_temporary>
   </component>
@@ -491,7 +539,10 @@
       <workItem from="1560234151083" duration="5868000" />
       <workItem from="1560305036490" duration="18220000" />
       <workItem from="1560390345872" duration="28834000" />
-      <workItem from="1560495651204" duration="13004000" />
+      <workItem from="1560495651204" duration="13103000" />
+      <workItem from="1560518464151" duration="2042000" />
+      <workItem from="1560738522857" duration="2501000" />
+      <workItem from="1560824501715" duration="8629000" />
     </task>
     <task id="LOCAL-00001" summary="修正登陆失败页面超链接的错误">
       <created>1560157125245</created>
@@ -534,13 +585,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128488000" />
+    <option name="totallyTimeSpent" value="141759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29380053" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3032345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -548,10 +599,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" visible="true" weight="0.32994187" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932614" weight="0.32994187" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4925876" weight="0.32994187" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4925876" visible="true" weight="0.32994187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -565,6 +615,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.4973046" weight="0.32994187" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49932614" weight="0.32994187" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32994187" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -591,212 +642,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/AuthenticatingSecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="290" selection-start-line="290" selection-end-line="290" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/filter/AccessControlFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/filter/PathMatchingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/AdviceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/SubjectCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/DelegatingSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="386" selection-start-line="386" selection-end-line="386" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="385" selection-start-line="385" selection-end-line="385" />
-          <folding>
-            <element signature="e#17830#18095#0" expanded="true" />
-            <element signature="e#18094#18095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/ProxiedFilterChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0-sources.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_failed.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2258">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/employee_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manager_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/RememberMeAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/UsernamePasswordToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/util/ThreadContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
-          <folding>
-            <element signature="e#11028#11029#0" expanded="true" />
-            <element signature="e#11077#11078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/SimplePrincipalCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/SecurityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/AuthenticationToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -853,20 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -877,13 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-204">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -894,46 +722,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="850">
           <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="1547">
           <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="406" column="28" selection-start-line="406" selection-start-column="28" selection-end-line="406" selection-end-column="28" />
-          <folding>
-            <element signature="e#14918#14919#0" expanded="true" />
-            <element signature="e#14952#14953#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,17 +750,291 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserBuyAndQuery.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserBuyAndQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employee.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_failed.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="54" lean-forward="true" selection-start-line="23" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/ExtendedAttributeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-819">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/EmployeeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1193">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#2993#2994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.1/mybatis-spring-2.0.1-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="374" selection-start-line="374" selection-end-line="374" />
+          <folding>
+            <element signature="e#10949#10950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/mapping/MappedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+          <folding>
+            <element signature="e#6446#6447#0" expanded="true" />
+            <element signature="e#6606#6607#0" expanded="true" />
+            <element signature="e#6625#6626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/reflection/TypeParameterResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/reflection/factory/DefaultObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="e#4526#4527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+          <folding>
+            <element signature="e#11331#11332#0" expanded="true" />
+            <element signature="e#17591#17592#0" expanded="true" />
+            <element signature="e#17621#17622#0" expanded="true" />
+            <element signature="e#24225#24226#0" expanded="true" />
+            <element signature="e#24275#24276#0" expanded="true" />
+            <element signature="e#25256#25257#0" expanded="true" />
+            <element signature="e#25306#25307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/reflection/ParamNameUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#1014#1015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/reflection/ParamNameResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0-sources.jar!/org/apache/ibatis/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE-sources.jar!/org/springframework/cglib/proxy/MethodProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="698" selection-start-line="698" selection-end-line="698" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="902" selection-start-line="902" selection-end-line="902" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="944" selection-start-line="944" selection-end-line="944" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="86" column="74" lean-forward="true" selection-start-line="86" selection-start-column="74" selection-end-line="86" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/purchaser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="114" column="16" lean-forward="true" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="178" column="51" lean-forward="true" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -971,11 +1044,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ShopDemoSSM:war exploded</last-edited>
+          <last-edited>ShopDemoSSM:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.23294118" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
