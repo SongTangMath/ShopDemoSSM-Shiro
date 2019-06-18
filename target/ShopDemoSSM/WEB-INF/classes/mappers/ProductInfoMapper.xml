@@ -34,8 +34,8 @@ SELECT* from product_info where product_info.id=#{name}
 
 
     <insert id="insertNewProduct">
-            insert into product_info (product_name,product_status,price,inventory_quantity,"
-            + "picture_link,product_plan,buying_price,product_category)values
+            insert into product_info (product_name,product_status,price,inventory_quantity,
+            picture_link,product_plan,buying_price,product_category)values
             (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8})
     </insert>
     <delete id="deleteProductByProductID">

@@ -10,10 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08504b0f-3b61-465a-affd-da2eb6bb8d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopDemoSpring.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ShopDemoSpring.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedAuthenticationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/mappers/ProductInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/mappers/ProductInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedAuthenticationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/ProductInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/ProductInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +54,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="336">
+              <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -54,17 +72,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="70" column="114" selection-start-line="70" selection-start-column="114" selection-end-line="70" selection-end-column="114" />
+            <state relative-caret-position="133">
+              <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+            <state relative-caret-position="153">
+              <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -72,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="612">
               <caret line="183" column="34" lean-forward="true" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
             </state>
           </provider>
@@ -83,6 +101,41 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="114" column="16" lean-forward="true" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="96" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -122,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ExtendedAttributeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/OrderInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/SpringUtil.java" />
         <option value="$PROJECT_DIR$/src/test/resources/shiro.ini" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/EmployeeRealm.java" />
@@ -136,9 +188,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer_service.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/JSONReply.java" />
@@ -151,9 +201,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" />
       </list>
     </option>
   </component>
@@ -243,6 +296,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zkdx" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopDemoSSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zkdx" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShopDemoSSM" type="b2602c69:ProjectViewProjectNode" />
@@ -456,7 +518,7 @@
       <workItem from="1560495651204" duration="13103000" />
       <workItem from="1560518464151" duration="2042000" />
       <workItem from="1560738522857" duration="2501000" />
-      <workItem from="1560824501715" duration="9849000" />
+      <workItem from="1560824501715" duration="10967000" />
     </task>
     <task id="LOCAL-00001" summary="修正登陆失败页面超链接的错误">
       <created>1560157125245</created>
@@ -499,7 +561,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142979000" />
+    <option name="totallyTimeSpent" value="144097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -556,13 +618,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/AuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/HostAuthenticationToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -612,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -661,24 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,6 +944,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/purchaser.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -924,31 +965,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="96" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
           <caret line="183" column="34" lean-forward="true" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="336">
+          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="70" column="114" selection-start-line="70" selection-start-column="114" selection-end-line="70" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        <state relative-caret-position="166">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>

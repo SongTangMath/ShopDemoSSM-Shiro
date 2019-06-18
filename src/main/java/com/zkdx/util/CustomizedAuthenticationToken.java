@@ -2,8 +2,10 @@ package com.zkdx.util;
 
 import org.apache.shiro.authc.UsernamePasswordToken;
 
+import java.io.Serializable;
 
-public class CustomizedAuthenticationToken extends UsernamePasswordToken {
+
+public class CustomizedAuthenticationToken extends UsernamePasswordToken implements Serializable {
     private String loginCategory;
 
     public String getLoginCategory() {

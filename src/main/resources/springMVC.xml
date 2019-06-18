@@ -30,7 +30,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 	<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
 		<property name="securityManager" ref="securityManager"></property>
 	</bean>
-
+<!--
 	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
 		<property name="defaultErrorView" value="error"></property>
 		<property name="exceptionMappings">
@@ -39,7 +39,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 			</props>
 		</property>
 	</bean>
-
+-->
 	<mvc:default-servlet-handler />
 	<mvc:annotation-driven>
 		<mvc:message-converters

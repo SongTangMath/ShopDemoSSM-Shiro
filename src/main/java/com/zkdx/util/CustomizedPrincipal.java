@@ -1,7 +1,9 @@
 package com.zkdx.util;
 
 
-public class CustomizedPrincipal {
+import java.io.Serializable;
+
+public class CustomizedPrincipal implements Serializable {
     private String loginCategory;
     private String username;
 

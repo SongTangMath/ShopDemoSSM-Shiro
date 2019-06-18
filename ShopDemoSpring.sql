@@ -2,7 +2,7 @@ create database shopdemospring charset utf8mb4;
 use shopdemospring;
 create table product_info
 (id int(10) primary key auto_increment,
-product_name varchar(60) not null,
+product_name varchar(120) not null,
 product_status int(10)not null,
 price int(10),
 inventory_quantity int(10),
@@ -17,7 +17,7 @@ create table user
 username varchar(20),
 password varchar(10),
 phone varchar(11),
-address varchar(30), 
+address varchar(90), 
 unique(username))
 charset utf8mb4;
 create table employee
@@ -61,5 +61,7 @@ attribute_name varchar(60),
 attribute_value varchar(60),
 unique(product_id,attribute_name))charset utf8mb4;
 
-insert into user(username,password,phone,address) values('张三'.123,17718920358,'Palmont City')
+insert into user(username,password,phone,address) values('张三','123','17718920358','Palmont City');
+insert into user(username,password,phone,address) values('Tom','123','17718920358','Salt Lake City');
 
+insert into employee(identity_card,name,password,department_name,job,salary) values('test','员工路人甲','test','销售部','售货员',1000);
