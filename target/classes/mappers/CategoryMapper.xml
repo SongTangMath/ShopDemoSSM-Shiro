@@ -30,7 +30,7 @@
        values(#{param1},#{param2},#{param3},#{param4},#{param5})
     </insert>
 <update id="setIsEnd">
-    update category set is_end=#{param1} where category_name=#{param2}
+    update category set is_end=#{param2} where category_name=#{param1}
 </update>
     <update id="setStatus">
         update category set category_status=#{param2} where category_name=#{param1}

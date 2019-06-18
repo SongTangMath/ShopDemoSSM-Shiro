@@ -52,7 +52,7 @@ public class CategoryServiceImpl implements CategoryService {
             for (Category category : list) {
                 deleteCategoryAndItsSubCategoriesByName(category.getCategoryName());
             }
-             categoryDAO.deleteCategoryByName(name);
+            categoryDAO.deleteCategoryByName(name);
         }
         return 1;
     }
@@ -68,18 +68,17 @@ public class CategoryServiceImpl implements CategoryService {
                 father = categoryDAO.getCategoryByName(parentName);
                 if (father != null) {
                     categoryDAO.setIsEnd(father.getCategoryName(), 0);
-                    return categoryDAO.insertNewCategory(name, father.getCategoryID(), 1, categoryStatus, father.getCategoryLevel()+1);
-                }
-                else{
+                    System.out.println("new Category " + name + " " + father.getCategoryID() + " 1 " + categoryStatus + " " + (father.getCategoryLevel() + 1));
+                    return categoryDAO.insertNewCategory(name, father.getCategoryID(), 1, categoryStatus, father.getCategoryLevel() + 1);
+                } else {
                     System.out.println("parent_category doesn't exist");
                     return 0;
                 }
 
             } else {
-                return categoryDAO.insertNewCategory(name, -1,1, categoryStatus, categoryLevel);
+                return categoryDAO.insertNewCategory(name, -1, 1, categoryStatus, categoryLevel);
             }
-        }
-        else{
+        } else {
             System.out.println("category already exists");
             return 0;
         }
@@ -108,7 +107,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public List<Category> listCategoriesByParentName(String parentName) {
-        List<Category>list=new ArrayList<Category>();
+        List<Category> list = new ArrayList<Category>();
         if (!validateArg(parentName)) {
             return list;
         }
@@ -117,7 +116,7 @@ public class CategoryServiceImpl implements CategoryService {
         Category parent = getCategoryByName(parentName);
         if (parent == null) {
             return list;
-        }else {
+        } else {
             return categoryDAO.listCategoriesByParentId(parent.getCategoryID());
         }
     }

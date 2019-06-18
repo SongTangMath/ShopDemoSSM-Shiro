@@ -10,114 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08504b0f-3b61-465a-affd-da2eb6bb8d14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopDemoSpring.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ShopDemoSpring.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/EmployeeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/OrderInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductInfoDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/SellingStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/SellingStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/database/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/listener/SpringServletContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/listener/SpringServletContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/EditProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/JSONReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/JSONReply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/LoginHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/Quit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/Quit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserBuyAndQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserBuyAndQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/servlet/UserRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedAuthenticationToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/CustomizedPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/LoginRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/LoginRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/SpringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/com/zkdx/util/SpringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShopDemoSSM/WEB-INF/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/EmployeeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ExtendedAttributeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/OrderInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductInfoDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/SellingStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/SellingStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/database/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/listener/SpringServletContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/listener/SpringServletContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/EditProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/JSONReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/JSONReply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/LoginHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/Quit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/Quit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserBuyAndQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserBuyAndQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/servlet/UserRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedAuthenticationToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedFormAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/CustomizedPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/LoginRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/LoginRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zkdx/util/SpringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zkdx/util/SpringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestMain.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -147,19 +43,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+            <state relative-caret-position="269">
+              <caret line="70" column="114" selection-start-line="70" selection-start-column="114" selection-end-line="70" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="178" column="51" lean-forward="true" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
+            <state relative-caret-position="102">
+              <caret line="183" column="34" lean-forward="true" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -208,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ExtendedAttributeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/OrderInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/SpringUtil.java" />
         <option value="$PROJECT_DIR$/src/test/resources/shiro.ini" />
@@ -233,13 +146,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/UserRegister.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/TestMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
       </list>
     </option>
   </component>
@@ -542,7 +456,7 @@
       <workItem from="1560495651204" duration="13103000" />
       <workItem from="1560518464151" duration="2042000" />
       <workItem from="1560738522857" duration="2501000" />
-      <workItem from="1560824501715" duration="8629000" />
+      <workItem from="1560824501715" duration="9849000" />
     </task>
     <task id="LOCAL-00001" summary="修正登陆失败页面超链接的错误">
       <created>1560157125245</created>
@@ -585,13 +499,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141759000" />
+    <option name="totallyTimeSpent" value="142979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3032345" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3032345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -601,7 +515,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932614" weight="0.32994187" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4925876" visible="true" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4925876" visible="true" weight="0.32994187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -806,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -996,13 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1024,17 +924,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="183" column="34" lean-forward="true" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="178" column="51" lean-forward="true" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
+        <state relative-caret-position="506">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="70" column="114" selection-start-line="70" selection-start-column="114" selection-end-line="70" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
         </state>
       </provider>
     </entry>
