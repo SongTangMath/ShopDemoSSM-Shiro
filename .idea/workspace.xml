@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08504b0f-3b61-465a-affd-da2eb6bb8d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="982">
@@ -99,6 +98,33 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -150,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/employee_login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer_service.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedFormAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditEmployee.java" />
@@ -163,13 +188,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/EditProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedAuthenticationToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/CustomizedPrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zkdx/util/LoginRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java" />
       </list>
     </option>
   </component>
@@ -481,7 +507,7 @@
       <workItem from="1560495651204" duration="13103000" />
       <workItem from="1560518464151" duration="2042000" />
       <workItem from="1560738522857" duration="2501000" />
-      <workItem from="1560824501715" duration="11865000" />
+      <workItem from="1560824501715" duration="12427000" />
     </task>
     <task id="LOCAL-00001" summary="修正登陆失败页面超链接的错误">
       <created>1560157125245</created>
@@ -524,13 +550,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144995000" />
+    <option name="totallyTimeSpent" value="145557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3032345" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3032345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -540,7 +566,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932614" weight="0.32994187" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4925876" visible="true" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4925876" visible="true" weight="0.32994187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -707,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="54" lean-forward="true" selection-start-line="23" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -876,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -894,13 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -973,6 +978,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/database/CategoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zkdx/servlet/LoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>

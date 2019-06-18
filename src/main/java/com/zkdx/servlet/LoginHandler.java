@@ -40,6 +40,9 @@ public class LoginHandler {
                         Map<String, Object> map) {
 
         CustomizedPrincipal customizedPrincipal = (CustomizedPrincipal) SecurityUtils.getSubject().getPrincipal();
+        if (customizedPrincipal == null) {
+            return "login_failed";
+        }
         String username = customizedPrincipal.getUsername();
         String loginCategory = customizedPrincipal.getLoginCategory();
         if (request.getSession().getAttribute("shiroLoginFailure") != null) {
