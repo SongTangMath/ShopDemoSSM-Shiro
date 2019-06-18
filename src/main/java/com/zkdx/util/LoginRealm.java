@@ -42,14 +42,14 @@ public class LoginRealm extends AuthorizingRealm {
 
             String password = new String(token1.getPassword());
             if ("admin".equals(loginCategory)) {
-                System.out.println("admin verifying ");
+
                 if ("admin".equals(username) && "123".equals(password)) {
                     return new SimpleAuthenticationInfo(token1.getPrincipal(), token1.getCredentials(), getName());
                 } else {
                     return null;
                 }
             } else if ("employee".equals(loginCategory)) {
-                System.out.println("employee verifying ");
+
                 Employee employee = employeeService.getEmployeeByIdentityCard(username);
                 if (employee != null && employee.getPassword().equals(password)) {
                     return new SimpleAuthenticationInfo(token1.getPrincipal(), token1.getCredentials(), getName());
@@ -74,10 +74,7 @@ public class LoginRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 
         CustomizedPrincipal customizedPrincipal = (CustomizedPrincipal) principals.getPrimaryPrincipal();
-        System.out.println("customizedPrincipal: " + customizedPrincipal);
-
         String loginCategory = customizedPrincipal.getLoginCategory();
-        System.out.println(loginCategory);
         String username = customizedPrincipal.getUsername();
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         if ("admin".equals(loginCategory)) {

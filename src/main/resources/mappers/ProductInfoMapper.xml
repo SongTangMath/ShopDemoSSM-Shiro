@@ -22,11 +22,15 @@ SELECT* from product_info where product_info.id=#{name}
         update product_info set product_plan=#{param2} where product_name=#{param1}
     </update>
 
+    <update id="modifyProductPlanByProductID">
+        update product_info set product_plan=#{param2} where id=#{param1}
+    </update>
+
     <update id="setProductIntentoryQuantityByProductId">
         update product_info set inventory_quantity=#{param2} where id=#{param1}
     </update>
     <update id="modifyProductStatusByProductId">
-        update product_info set inventory_quantity=#{param2} where id=#{param1}
+        update product_info set product_status=#{param2} where id=#{param1}
     </update>
     <delete id="clearProducts">
         delete from product_info
