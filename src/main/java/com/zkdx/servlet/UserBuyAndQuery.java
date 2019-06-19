@@ -90,6 +90,7 @@ public class UserBuyAndQuery {
     @RequiresRoles("user")
     public String userQueryByKeyWords(@PathVariable("username") String username, Map<String, Object> map,
                                       String productCategory) {
+        System.out.println("user query: "+productCategory);
         map.put("products", productService.listStatus0ProductsByProductCategory(productCategory));
         return "products";
     }

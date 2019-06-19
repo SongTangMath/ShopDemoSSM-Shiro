@@ -9,7 +9,7 @@
 SELECT* from product_info where product_info.id=#{id}
    </select>
     <select id="getProductInfoByProductName" resultType="com.zkdx.database.ProductInfo">
-SELECT* from product_info where product_info.id=#{name}
+SELECT* from product_info where product_info.product_name=#{name}
     </select>
     <update id="modifyProductByProductID">
         update product_info set product_name=#{param2},product_status=#{param3},price=#{param4},inventory_quantity=#{param5},
@@ -57,6 +57,6 @@ SELECT* from product_info where product_info.id=#{name}
        select* from product_info where product_status=0
     </select>
     <select id="listStatus0ProductsByProductCategory" resultType="com.zkdx.database.ProductInfo">
-        update product_info set product_plan=#{param2} where id=#{param1}
+       select* from product_info where (product_category like %${param1}% or product_name like ${param2})and product_status=0
     </select>
 </mapper>

@@ -124,12 +124,12 @@ public class EditProduct {
         System.out.println(multipartFile);
 
         if (multipartFile != null && multipartFile.getSize() > 0) {
-            String filePathPart1 = request.getServletContext().getRealPath("/UploadedPictures");
+            String filePathPart1 = request.getServletContext().getRealPath("/static");
             String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
                     + request.getContextPath() + "/";
             long time = System.currentTimeMillis();
             String filePathPart2 = time + multipartFile.getOriginalFilename();
-            String newPictureLink = basePath + "UploadedPictures/" + filePathPart2;
+            String newPictureLink = basePath + "static/" + filePathPart2;
 
             File file = new File(filePathPart1);
             if (!file.exists()) {
@@ -163,7 +163,7 @@ public class EditProduct {
             level2 = level2.trim();
         }
         if (level2 != null && !"".equals(level2) && price != null && buyingPrice != null) {
-            System.out.println("new Product");
+            System.out.println("new Product "+productName+" "+ price+" "+buyingPrice+" "+level2);
             productService.insertNewProduct(productName, 0, price, 0, "", "", buyingPrice, level2);
         }
         List<ProductInfo> list = productService.listAllProducts();

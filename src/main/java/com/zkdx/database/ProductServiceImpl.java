@@ -102,17 +102,25 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public int insertNewProduct(String productName, int productStatus, int price, int inventoryQuantity,
         String pictureLink, String productPlan, int buyingPrice, String productCategory) {
-        boolean isArgsValid = (validateArg(productName) && price >= 1 && inventoryQuantity >= 0 && pictureLink != null
-            && productPlan != null && buyingPrice >= 0 && validateArg(productCategory));
+        boolean isArgsValid = (validateArg(productName) &&
+                price >= 1 &&
+                inventoryQuantity >= 0 &&
+                pictureLink != null
+            && productPlan != null && buyingPrice >= 0 &&
+                validateArg(productCategory));
         if (!isArgsValid) {
+            System.out.println("new product invalid args");
             return 0;
         }
         ProductInfo info = productInfoDAO.getProductInfoByProductName(productName);
         if (info != null) {
+            System.out.println(info);
+            System.out.println("new product already exists");
             return 0;
         }
 
         else {
+            System.out.println("new product comfirmed in service");
             return productInfoDAO.insertNewProduct(productName, productStatus, price, inventoryQuantity, pictureLink,
                 productPlan, buyingPrice, productCategory);
         }
