@@ -51,12 +51,12 @@ SELECT* from product_info where product_info.product_name=#{name}
         select* from product_info
     </select>
     <select id="listProductsByProductCategory" resultType="com.zkdx.database.ProductInfo">
-        select* from product_info where product_category like %${param1}% or product_name like ${param2}
+        select* from product_info where product_category like %${pattern}% or product_name like %${pattern}%
     </select>
     <select id="listStatus0Products" resultType="com.zkdx.database.ProductInfo">
        select* from product_info where product_status=0
     </select>
     <select id="listStatus0ProductsByProductCategory" resultType="com.zkdx.database.ProductInfo">
-       select* from product_info where (product_category like %${param1}% or product_name like ${param2})and product_status=0
+       select* from product_info where (product_category like '%${pattern}%' or product_name like '%${pattern}%')and product_status=0
     </select>
 </mapper>

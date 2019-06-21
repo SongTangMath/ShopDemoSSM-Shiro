@@ -78,8 +78,8 @@
 	<form method="POST"
 		action="${pageContext.request.contextPath}/AddNewProduct">
 		<div style="text-align: center">
-			商品名称<input type="text" name="productName" /> <br/>商品售价<input type="number"
-				name="price" />  <br/>商品进价<input type="number" name="buyingPrice" />
+			商品名称<input type="text" name="productName" /> <br/>商品售价<input type="number" min="0"
+				name="price" />  <br/>商品进价<input type="number" min="0" name="buyingPrice" />
 			 <br/>商品类别选择
 			
 			

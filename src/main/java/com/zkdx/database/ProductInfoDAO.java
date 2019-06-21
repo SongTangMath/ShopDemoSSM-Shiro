@@ -1,5 +1,7 @@
 package com.zkdx.database;
 
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface ProductInfoDAO {
@@ -29,10 +31,10 @@ public interface ProductInfoDAO {
 
     public List<ProductInfo> listAllProducts();
 
-    public List<ProductInfo> listProductsByProductCategory(String pattern);
+    public List<ProductInfo> listProductsByProductCategory(@Param("pattern") String pattern);
 
     public List<ProductInfo> listStatus0Products();
 
-    public List<ProductInfo> listStatus0ProductsByProductCategory(String pattern);
+    public List<ProductInfo> listStatus0ProductsByProductCategory(@Param("pattern")String pattern);
 
 }
